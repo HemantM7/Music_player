@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Music player</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <button class="hdbtn">
+                    <i class="fi fi-sr-arrow-small-left"></i>
+                </button>
+                <h3 class="p_now">Playing now</h3>
+                <button class="hdbtn">
+                    <i class="fi fi-sr-list"></i>
+                </button>
+            </header>
+
+            <div class="player">
+                <div class="img-area">
+                    <img class="img" src="assets/images/Capture4.PNG" alt="">
+                </div>
+
+                <div class="song-details">
+                    <h1 class="name">Animation</h1>
+                    <h3 class="artist">Coding</h3>
+                </div>
+
+                <div class="audioC">
+                    <div class="song-timer">
+                        <span class="current-time">0:00</span>
+                        <span class="max-duration">0:00</span>
+                    </div>
+                    <div class="progress-area">
+                        <div class="progress-bar">
+                            <audio id="main-audio" src="assets/songs/Ishq Tera (RiskyjaTT.CoM).mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="btnC" id="prev">
+                        <i class="fi fi-sr-rewind"></i>
+                    </button>
+                    <button class="play-pause btnC">
+                        <i class="fi fi-sr-play play"></i>
+                    </button>
+                    <button class="btnC" id="next">
+                        <i class="fi fi-sr-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="musiclist.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
